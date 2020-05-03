@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/catphoto"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@mipmap/ic_launcher_round"/>
+    <TextView
+        android:id="@+id/catbreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/catphoto"
+        app:layout_constraintTop_toTopOf="@+id/catphoto"
+        android:tooltipText="breed"/>
+    <TextView
+        android:id="@+id/catage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/catphoto"
+        app:layout_constraintStart_toStartOf="@+id/catbreed"
+        android:tooltipText="age"/>
+    <TextView
+        android:id="@+id/catgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/catage"
+        app:layout_constraintStart_toEndOf="@+id/catage"
+        app:layout_constraintTop_toTopOf="@id/catage"
+        android:tooltipText="gender"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
